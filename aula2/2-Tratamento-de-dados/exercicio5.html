@@ -15,12 +15,15 @@
 </head>
 <body>
     <h1>Meu Primeiro Script</h1>
-    <span>Exercicio 4</span>
+    <span>Exercicio 5</span>
     <script>
-        window.confirm('quer aprender JavaScript?')
-       /*fazer uma pergunta na tela inicial (window.prompt)*/
-       var nome =  window.prompt('Qual o seu nome?')
-       window.alert(nome +', Seja Bem Vindo ao maior site de vendas da internet')
+        //Number.parsInt() <-- converte String oara numero inteiro
+        ///Number.parsFlout() <-- converte String oara numero real
+        ///Number() <-- Javascript interpreta e resolve 
+       var n1 = Number.parseInt (window.prompt('Digite um numero'))
+       var n2 = Number.parseInt (window.prompt('Digite outro numero'))
+       var s = n1 + n2 
+       window.alert (' A soma dos dois numeros é:' + s)
     </script>
 </body>
 </html> 
