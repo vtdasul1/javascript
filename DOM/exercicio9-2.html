@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Javascipt</title>
+
+    <style>
+        body{
+            background-color: blue;
+            color: rgb(230, 69, 29);
+            font: normal 18pt Arial;
+            text-align: center;
+        }
+            
+    </style>   
+</head>
+
+<body>
+    <h1> Entendendo o DOM</h1>
+    <p>Postanto aqui os resultados </p>
+    <p>Aprendendo a usar o <strong>DOM </strong> em Javascript</p>
+    <div name="msg">Clique aqui!!!</div>
+
+    <script>
+        var corpo = window.document.body
+       corpo.style.background = 'black'
+
+       //var d = window.document.getElementsByName('msg')
+       //d.style.background = "green"
+       //d.innerText = 'estou aguardando...'
+
+       var d = window.document.getElementsByName('msg')[0]
+       d.style.background = 'red'
+       d.style.color = 'black'
+       d.innerText = 'Estou aguardando. . .'
+
+    </script>
+       
+</body>
+</html>

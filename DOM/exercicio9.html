@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Javascipt</title>
+
+    <style>
+        body{
+            background-color: blue;
+            color: yellowgreen;
+            font: normal 18pt Arial;
+            text-align: center;
+        }
+            
+    </style>   
+</head>
+
+<body>
+    <h1> Entendendo o DOM</h1>
+    <p>Postanto aqui os resultados </p>
+    <p>Aprendendo a usar o <strong>DOM </strong> em Javascript</p>
+    <div>Clique aqui!!!</div>
+
+    <script>
+        //window.document.write('Veja o poder do DOM') //exibe um texto no html
+        //window.document.write(window.document.charset) // mostra o mapa de caracteres
+        //window.document.write(window.document.URL) // exibe o endereço do site 
+
+        //var p1 = window.document.getElementsByTagName('p')
+
+        //var p1 = window.document.getElementsByTagName('p') [1]
+
+       //window.document.write(' esse é o texto:' + p1.innerHTML) //tras o texto selecionado jundo com a formatação
+
+       //p1.style.color = 'black' //muda a cor do texto
+
+        var corpo = window.document.body
+       corpo.style.background = 'black'
+
+       var p1 = window.document.getElementsByTagName ('p')[1]
+        window.alert(p1.innerText)// mostra o texto sem os comandos 
+        
+        //window.alert(p1.innerHTML) // mostra os texto com os comandos 
+    </script>
+</body>
+</html>
